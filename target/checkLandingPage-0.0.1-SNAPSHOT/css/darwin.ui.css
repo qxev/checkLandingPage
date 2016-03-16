@@ -1,0 +1,859 @@
+html {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	background: #eee;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#darwin-head {
+	height: 50px;
+	background: #fff;
+}
+
+#darwin-head-user {
+	margin: 10px 40px 0;
+	float: right;
+}
+
+#darwin-head-logo {
+	margin: 10px 0 0 10px;
+	float: left;
+	height: 11px;
+	width: 120px;
+	background: url(/images/logo_sv3.png) scroll no-repeat 0 0;
+}
+
+#darwin-navigation {
+	height: 30px;
+	margin: 0 0 5px 0;
+	background: #fff;
+	border-bottom: 2px solid green;
+}
+
+#darwin-menu {
+	margin: 0 10px;
+	padding: 0;
+	height: 100%;
+	list-style: none;
+}
+
+#darwin-menu .darwin-menu-list {
+	float: left;
+	width: 100px;
+	height: 15px;
+	border: 0 solid #ddd;
+	border-left-width: 2px;
+	border-top-width: 3px;
+	float: left;
+	padding: 6px 10px;
+	text-align: center;
+}
+
+#darwin-menu .darwin-menu-list a {
+	text-decoration: none;
+}
+
+#darwin-menu .darwin-menu-last-list {
+	border-right-width: 2px;
+}
+
+#darwin-menu .darwin-menu-selected {
+	border-top: 3px solid #389C39;
+	color: #389C39;
+	font-weight: 600;
+}
+
+#darwin-menu .darwin-menu-list a:link,#darwin-menu .darwin-menu-list a:visited,#darwin-menu .darwin-menu-list a:hover
+	{
+	color: #333333;
+}
+
+#darwin-menu .darwin-menu-list a:hover {
+	text-decoration: underline;
+	color: #389c39;
+}
+
+#darwin-menu .darwin-menu-selected a:link,#darwin-menu .darwin-menu-selected a:visited,#darwin-menu .darwin-menu-selected a:hover
+	{
+	color: #389c39;
+}
+
+#darwin-menu .darwin-menu-selected a:hover {
+	text-decoration: none;
+	color: #389c39;
+}
+
+#darwin-footer {
+	color: #666;
+	background: #fff;
+	height: 40px;
+	text-align: center;
+}
+
+#darwin-footer-copy {
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+#darwin-container {
+	background: #eee;
+	margin: 0 0 10px 10px;
+}
+
+.darwin-text-right {
+	text-align: right;
+}
+
+.darwin-title-left-corner { /* 左侧蓝色圆角 */
+	height: 23px;
+	background: transparent url(/images/AppKit/Resources/Waves/topLeft.png)
+		no-repeat scroll 0 0;
+	/* background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAXCAYAAADHhFVIAAAA60lEQVR42sXNzUoCYRjFcfMjNevyKs3SJsJw4cJFO8GF0To06YMsMmKGaFEUehmBRBQiVoQS9r6UN/D4nokZOd1AB/6r3+IEAn+2YY/XLefnwbLHQrDpfF9u32gp32vZbasp5hydL98p2WkpKV5r2XK0jzOlW/UGyNlKshe/uYAqBgpXX5Jpjvw8DOLDan5K5nwaMGgKAdfOhpSHYeDq6YAChkwRFxsfFDBsigLTJ+8UMGKKA1eOXyngrGnOxaM+BYyaEsDUYY/ycB6YPOhSwJiP9RfKwwXg8v4zRbhUe6IYq48U4eJeh/oPnAAACENMjzOW9AAAAABJRU5ErkJggg==) no-repeat scroll 0 0; */
+}
+
+.darwin-title-right-corner { /* 右侧蓝色圆角 */
+	height: 23px;
+	background: transparent url(/images/AppKit/Resources/Waves/topRight.png)
+		no-repeat scroll 100% 0;
+	/* background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAXCAYAAAAC9s/ZAAABMklEQVR42u2Qy0pCYRRGtaxMky5WSBeICiLqYZqU3TUQgmZR814hutCFLnQxnUQNepKIKCKKiCLkHMQX+PoGW9gc/v+YjtuwJmuw2HsHlnKl2/RVaSJQ62zcuVi7cZHJF7M1BdKXLpbzLlavHazkCutUQUXlSV04KJPJOkWqOuFvocXzAjRUIVJvCFkCZz/QUDWRRk/IHlg4/YaGKkqaDRHzzJ98QUPVRmKeiE/g+BMaqi7SriINsoV55o4+oKHqJd2ySVR+ErIGZg/foaEaID0k7tnCEjh4g4ZqmPTLFq0kIr8wz8z+KzRUI7JFQn5RPsM803sv0FCNkkE5o4O0+Ad2n6GhGiND8sy4BMLWQHLnCRpDIOYbmNp+hIZqXB7ZRzorB7YeoKk6MLl5D81/oPrAL8EaAV0ZJSdiAAAAAElFTkSuQmCC) no-repeat scroll 100% 0; */
+}
+
+.darwin-title-background { /* 中间蓝色背景 */ /* background-color: #5590D2; */
+	background-color: #389C39;
+	background-repeat: repeat-x;
+	margin: 0 16px 0 7px;
+	height: 23px;
+	background-image: url(/images/AppKit/Resources/Waves/topCenter.png);
+	/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAXCAIAAAA0gN7GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFxJREFUeNpiTFz+iWEoAxZVgd9D2wO33jIObQ/8//9/qHvg39D2AMNQ98D/f/9G88BoEhrRmXjI5wGG0Xpg1AMUJqHRemA0CY22hYa0B5gYhjgY9cCoBygEAAEGAOjwMAksun6KAAAAAElFTkSuQmCC); */
+}
+
+.darwin-title-button { /* 白色的减号 */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAF0lEQVR42mNgGAUM//EA2moeBaMAHQAA9d83yRzP5kIAAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+	height: 15px;
+	overflow: hidden;
+	width: 15px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+	border: 0px solid #ddd;
+}
+
+.darwin-title-button-hover { /* 有灰色背景的白色的减号 */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAQUlEQVR42mNgYGBgAWINIHYgEttA1YP0kaQRGYP0gU1yIBOTrRFT8388gLaaB87Po5oJpnHK0jYod6iQmMbBuQoAvIJqxQ9xFh4AAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+}
+
+.darwin-title-button-press { /* 有深灰色背景的白色的减号 */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAARElEQVR42mNgYGDgAOIAIG4gEldA1YP0kaQRGYP0gU1qIBOTrRFT89mzZ6/iwrTVPHB+HtVMMI1TlrZBucODxDQOzlUAfAaTQe16oegAAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+}
+
+.darwin-title-button-fold { /* 白色的窗口形状 */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAHElEQVR42mNgGAUM//EA2msmRXy4aCY7wEYAAAANZXONzd+/WAAAAABJRU5ErkJggg==)
+		no-repeat scroll 0 0;
+}
+
+.darwin-title {
+	line-height: 23px;
+	color: white;
+	font-weight: bold;
+	margin: 0 10px;
+}
+
+.darwin-contents {
+	background: #fff;
+	margin: 0 12px 0 3px;
+}
+
+.darwin-contents-background { /* 灰色的DIV侧边阴影条 */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAABACAYAAAAu75bwAAAANElEQVR42u3LoREAIQADwUjMOyQS+f3XRyqgAfZmTm6S/H331Wf/+sglAAAAAAAAAACeBAdJWiVBq4YJOAAAAABJRU5ErkJggg==)
+		repeat-y scroll 100% 0;
+}
+
+.darwin-table-header-background { /* 灰色的首行背景色 */
+	/*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAIAAADF1mwTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGFJREFUeNrs1dEJACEMBFHvsP9C7CXFSBBBknhF3NfATgcPsqSPMRq5594rgAACkAFVxQZEBBtwzmED9t5swFqLDXB3NmDOiQb0zGQD6H9AAAE0Yp2QAL96G7xuZmjAJ8AAFChCof7t9cIAAAAASUVORK5CYII=);*/
+	background-color: #ccc;
+	background-position: left top;
+	background-repeat: repeat-x;
+	height: 24px;
+}
+
+.darwin-slide-button-left { /* gray */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYCAYAAADd5VyeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIxJREFUeNpiZACCVatW1TMzM1f8/fuXA8Tp27Rp05unT5/+BwGQwJ+3b9/+//fv33+giv8sIC0CAgIMQA4DSAETSICJiQksAFTFAFYBAiBZEIALgGRRBAirGLRacKoAhcdHIAALgDBIYOGxY8f+//jxAxxIIC2NfHx8TlevXtVnQDKQH4j7gPgPQIABAG/sfLduedBMAAAAAElFTkSuQmCC)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 4px;
+	float: left;
+}
+
+.darwin-slide-button-middle { /* gray */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAeklEQVR42u3YAQpFEQBE0dn/VqyJ5PUkEr2IpOYvZP6ts4kLYwyVgeLh3ktlOOdQGfbeVIa1FpVhzkllGGNQGb7vozL03qkMrTUqQ62VylBKoTLknKkMKSUqQ4yRyvC+L5XheR4qQwiByuC9pzI456gM1loqw/8Ki/cDaJtRS5zeSF8AAAAASUVORK5CYII=)
+		repeat-x scroll 0 0;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	padding: 0 3px;
+	white-space: nowrap;
+	float: left;
+}
+
+.darwin-slide-button-right { /* gray */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAYCAYAAAAyJzegAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKFJREFUeNpiXL169X8gYFBVVWXQ0NCYwcHBUcn49+/f/+/fv2c4c+YMg7i4OIOent50hj9//vwH4SdPnvzfsGHD/3///v1gARIMICAiIsLw+/dvBkZGRna4IDJgAVmCIUihygHRDlNAf29+/vwZIQiMCoavX78yPHz4EBxHYMGLFy8yMDMzMwgJCf02MzP7DbRjA8jBf6D4DRDPA2I+gAADADHFiGWTyABuAAAAAElFTkSuQmCC)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 5px;
+	float: left;
+}
+
+.darwin-slide-button-left-pressed { /* gray pressed */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYCAYAAADd5VyeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAG5JREFUeNpiZACCVatW7QdS9kDMyALknAUyjBiggAmZAwIsIIKZmZn6AiwsLHSwBb8AIyMjpQ5jAnL+//z5EywIwkx8fHznb926xfD161cGkAUsXFxcAUxMTJuvXLmiD9f3//9/fiDuB+L/AAEGAAKjH/aC6pVvAAAAAElFTkSuQmCC)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 4px;
+	float: left;
+}
+
+.darwin-slide-button-middle-pressed { /* gray pressed */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAIAAADF1mwTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEdJREFUeNrs1VENADAIA1EY8y8EIdgqc7E0uXPw0o9md4dzJ8yzB9yqAgAAgDPgxQIAAAAAAIAjYwEAAD4BZsYakJKsASvAAByeCFXzdoMOAAAAAElFTkSuQmCC)
+		repeat-x scroll 0 0;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	float: left;
+}
+
+.darwin-slide-button-right-pressed { /* gray pressed */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAYCAYAAAAyJzegAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIhJREFUeNpiXLVq1X8GCDgPxAGhoaGPmBgQwJCNjW0bkBZAFmT49euXFpCqZ2FmZoYL/v37lxFIJaALgigBFEEYIEEQCCjRPrCClDmeCSQIwl+/fkUIgojPnz8z3L17l0FcXPwliM+4evXq/0CV/4WFhV9ZWlpysrKyrmP4jwDvgXg+EPMDBBgAAQA0odlX2ZQAAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 5px;
+	float: left;
+}
+
+.darwin-slide-button-left2 { /* green */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYCAYAAADd5VyeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANpJREFUeNpcj00KwjAQhSdtF2ILKnahVBDBheBC7AVc6lLwHC68iuB5PIF4BkGhpdAW/GutmTFtsLQJPJK8vG8yY4BYu4NzvPnR4pMhY9t97xSEd3c2acPQMUG7erHrTrsw6FvwTEIwcsTuNOCRBJBmkTSAafBK4/wgDU5CWDxJgzgDFCqNr0h8awlxwarBea4KgmpRjqyQgkAVUROo1EAV4SqCNYRkU2VjlM8ixi0Tuq7T85Wwfw3NMltnz/cgS+Vv2ny8XPft0eV9J3hEBEWOiJpi2witfgIMAPG+dHdbWrP4AAAAAElFTkSuQmCC)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 4px;
+	float: left;
+}
+
+.darwin-slide-button-middle2 { /* green */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAIAAADF1mwTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGRJREFUeNpiDKziYBjKgCXUU25oe+Dt59tD2wN//zEMdQ8wjsbAgHrg398hHgN/hnwMDPlM/Hc0E48WoxQmodEYGM0Do0loNAmNVmSjFdloY27gPPDl3f8h7QHG//+HtgcAAgwAS/IwKZoVb9AAAAAASUVORK5CYII=)
+		repeat-x scroll 0 0;
+	font-size: 8.5pt;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	padding: 0 3px;
+	white-space: nowrap;
+	float: left;
+}
+
+.darwin-slide-button-right2 { /* green */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAYCAYAAAAyJzegAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALtJREFUeNpiDKzi+P//PwODnKTAeR1Fz4A03/mPmILcZBlsTUUZ3n38YvjgxalDQBVcLB++3WFg42BgUFZkYrh26648AwNDMMvffwxgwM/3j+HPbzDTDijIyAAD/yEUF1wlMmD595cRU/APVpXYBP9i047VImQnIWknWiV22ynUTqrjIQH8H2H7vz8MDD++/mcQEZL4DBb8+v4/AyMTI4OwgMTnhoQde4FihxiBsbcUatQ3ID4DxIsBAgwAZFZZRvJAewsAAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 5px;
+	float: left;
+}
+
+.darwin-slide-button-left2-pressed { /* green pressed */
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAYCAYAAADd5VyeAAAAoUlEQVR42m3QyxGCQAyA4b1BrEF7EhQF1ItdiCiC+IA+rMMK6MFKWPNwkouZ+WZ2/5lc4hzO/BC+0Yi8i4pgoEdUhD4+YqAPPeJScFiURsLJcFiejYTKcEguRkJtOKxqI6ExHNZXUBJaUBzSG6j/IbuDkvAAxSF/guKw6UBJ6EHhCcMxx91tL1xSBQOdLvtFl7Yw23fTD63y1Wm89xO0Q68vYCqxvd0FiZEAAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 4px;
+	float: left;
+}
+
+.darwin-slide-button-middle2-pressed {
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAIAAADF1mwTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFZJREFUeNrslrENACAMwxrEwHm8w9NM7OWIDijIvaCW1TSaa4Tz9NbCGyBkDmC+/w8GhAEMkEIYeHsDwgApVBjzKscfwAAAVAkMVAHOTmsAZXoDXAEGAObOByd02IY9AAAAAElFTkSuQmCC)
+		repeat-x scroll 0 0;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	float: left;
+}
+
+.darwin-slide-button-right2-pressed {
+	background: transparent
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAYCAYAAAAyJzegAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpiDKjk+M8AAecZGRkC1rV+f8TExMTAAMJAYMjHLXIISHOxMDBClDECJT59fSsPZAYzgcRAGMT4/x9skh1cJRLgYmHEFGTAppKBFJUMxJuJLPqfRNuZGBgocydF3oQH8r8/SCr/QwV+fP3PICIk8Rks+PX9f2D8MDIIC0h8bkjYsRcodogRGC9Lobq+AfEZIF4MEGAApHIlce3nptUAAAAASUVORK5CYII=)
+		no-repeat scroll 0 0;
+	height: 24px;
+	overflow: hidden;
+	width: 5px;
+	float: left;
+}
+
+.darwin-pointer {
+	cursor: pointer;
+}
+
+.darwin-clear {
+	clear: both;
+}
+
+.darwin-clear-div {
+	clear: both;
+}
+
+.darwin-hidden {
+	display: none;
+}
+
+.darwin-odd {
+	background: #fff;
+}
+
+.darwin-even {
+	background: #eee;
+}
+
+.darwin-row-hover {
+	background: #d5effc;
+}
+
+.darwin-odd:hover,.darwin-even:hover {
+	background: #cff;
+}
+
+.darwin-text-center {
+	text-align: center;
+}
+
+.darwin-vertical-spliter {
+	margin: 5px 0;
+	height: 1px;
+}
+
+.darwin-expand-dark {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(/images/toggle-expand-dark.png) no-repeat scroll 0 50%;
+}
+
+.darwin-collapse-dark {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(/images/toggle-collapse-dark.png) no-repeat scroll 0 50%;
+}
+
+.darwin-expand-light {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(/images/toggle-expand-light.png) no-repeat scroll 0 50%;
+}
+
+.darwin-collapse-light {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(/images/toggle-collapse-light.png) no-repeat scroll 0
+		50%;
+}
+
+#darwin-overlay {
+	display: none;
+}
+
+.darwin-modal-window-container {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: 1001;
+	left: 0px;
+	top: 0px;
+	width: 620px;
+	height: 300px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-top-left {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowTopLeft.png)
+		repeat scroll 0% 0% transparent;
+	width: 15px;
+	height: 86px;
+	left: 0px;
+	top: 0px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-top-center {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowTopCenter.png)
+		repeat scroll 0% 0% transparent;
+	width: 590px;
+	height: 86px;
+	left: 15px;
+	top: 0px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-top-right {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowTopRight.png)
+		repeat scroll 0% 0% transparent;
+	width: 15px;
+	height: 86px;
+	right: 0px;
+	top: 0px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-center-left {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowCenterLeft.png)
+		repeat scroll 0% 0% transparent;
+	width: 15px;
+	height: 175px;
+	left: 0px;
+	top: 86px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-center {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowCenter.png)
+		repeat scroll 0% 0% transparent;
+	width: 590px;
+	height: 235px;
+	left: 15px;
+	top: 26px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-center-right {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowCenterRight.png)
+		repeat scroll 0% 0% transparent;
+	width: 15px;
+	height: 175px;
+	right: 0px;
+	top: 86px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-bottom-left {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowBottomLeft.png)
+		repeat scroll 0% 0% transparent;
+	width: 15px;
+	height: 39px;
+	left: 0px;
+	bottom: 0px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-bottom-center {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background:
+		url(/images/AppKit/Resources/HUDTheme/WindowBottomCenter.png) repeat
+		scroll 0% 0% transparent;
+	width: 590px;
+	height: 39px;
+	left: 15px;
+	bottom: 0px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-bottom-right {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: -1000;
+	background: url(/images/AppKit/Resources/HUDTheme/WindowBottomRight.png)
+		repeat scroll 0% 0% transparent;
+	width: 15px;
+	height: 39px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-title {
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: 0;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 1px 2px rgb(0, 0, 0);
+	left: 234px;
+	top: 3px;
+	width: 152px;
+	height: 24px;
+}
+
+.darwin-modal-window-container .darwin-modal-window-title .darwin-modal-window-title-content
+	{
+	line-height: 24px;
+	white-space: pre;
+	cursor: default;
+	z-index: 100;
+	text-align: center;
+}
+
+.darwin-modal-window-container .darwin-modal-window-center .darwin-modal-window-center-content
+	{
+	position: absolute;
+	overflow: auto;
+	background-color: #eee;
+	left: 0px;
+	top: 1px;
+	width: 590px;
+	height: 228px;
+}
+
+.darwin-no-drag {
+	height: 100%;
+	width: 11px;
+	background: #ddd;
+}
+
+.darwin-drag {
+	height: 100%;
+	width: 11px;
+	background: #ddd url(/images/move1.png) no-repeat scroll 0 50%;
+	cursor: move;
+}
+
+.darwin-dragging {
+	position: absolute;
+	width: 120px;
+	height: 30px;
+	color: #fff;
+	background: #000;
+	padding: 0 0 0 20px;
+	z-index: 2;
+}
+
+.darwin-drop {
+	
+}
+
+div.darwin-tooltip {
+	display: none;
+	z-index: 1000;
+	width: 238px;
+	height: 60px;
+	position: absolute;
+}
+
+.darwin-tooltip .darwin-tooltip-top-left {
+	height: 15px;
+	width: 19px;
+	position: absolute;
+	background: url(/images/tooltip/top-left.png) no-repeat scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-top-center {
+	height: 15px;
+	left: 19px;
+	width: 200px;
+	position: absolute;
+	background: url(/images/tooltip/top-center.png) repeat-x scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-top-right {
+	height: 15px;
+	width: 19px;
+	left: 219px;
+	position: absolute;
+	background: url(/images/tooltip/top-right.png) no-repeat scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-middle-left {
+	width: 19px;
+	top: 15px;
+	min-height: 25px;
+	position: absolute;
+	background: url(/images/tooltip/middle-left.png) repeat-y scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-middle-center {
+	top: 15px;
+	left: 19px;
+	min-height: 25px;
+	position: absolute;
+	background: #fff;
+}
+
+.darwin-tooltip .darwin-tooltip-middle-right {
+	width: 19px;
+	top: 15px;
+	left: 219px;
+	min-height: 25px;
+	position: absolute;
+	background: url(/images/tooltip/middle-right.png) repeat-y scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-bottom-left {
+	height: 15px;
+	width: 19px;
+	top: 40px;
+	position: absolute;
+	background: url(/images/tooltip/bottom-left.png) no-repeat scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-bottom-center {
+	position: absolute;
+	text-align: center;
+	height: 15px;
+	left: 19px;
+	top: 40px;
+	width: 200px;
+	background: url(/images/tooltip/bottom-center.png) repeat-x scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-bottom-center-tail {
+	position: absolute;
+	height: 29px;
+	left: 15px;
+	width: 30px;
+	margin: 0 auto;
+	background: url(/images/tooltip/bubble-tail.png) no-repeat scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-bottom-right {
+	height: 15px;
+	top: 40px;
+	left: 219px;
+	width: 19px;
+	position: absolute;
+	background: url(/images/tooltip/bottom-right.png) no-repeat scroll 0 0;
+}
+
+.darwin-tooltip .darwin-tooltip-contents {
+	text-align: left;
+}
+
+.darwin-css-button {
+	background: transparent url(/images/buttons/buttonright1.png) no-repeat
+		scroll right top;
+	float: left;
+	margin: 5px 5px 0 0;
+	text-align: center;
+}
+
+.darwin-css-button a {
+	background: transparent url(/images/buttons/buttonleft1.png) no-repeat
+		scroll left top;
+	color: #0066CC;
+	display: block;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0 5px 0 0;
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: medium;
+	padding: 5px 5px 5px 10px;
+	text-decoration: none;
+}
+
+.darwin-css-button:hover {
+	background: transparent url(/images/buttons/buttonright2.png) no-repeat
+		scroll right top;
+}
+
+.darwin-css-button a:hover {
+	color: #0a0;
+	background: transparent url(/images/buttons/buttonleft2.png) no-repeat
+		scroll left top;
+}
+
+.darwin-float-right {
+	float: right;
+}
+
+.darwin-float-left {
+	float: left;
+}
+
+.darwin-grid-thead {
+	background: #FAFAFA url(/images/flexigrid/fhbg.gif) repeat-x scroll
+		center bottom;
+	border-color: #CCCCCC;
+	border-style: none solid;
+	border-width: 0 1px;
+	overflow: hidden;
+	cursor: default;
+	font-weight: 600;
+	line-height: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.darwin-grid-title-container {
+	background: transparent url(/images/flexigrid/wbg.gif) repeat-x scroll
+		center top;
+	border-color: #CCCCCC;
+	border-style: none solid;
+	border-width: 0;
+	height: 26px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.darwin-grid-title {
+	font-size: 14px;
+	margin: 4px 10px;
+}
+
+.darwin-error-message {
+	margin: 10px;
+	color: #CC0000;
+	background: #fff;
+}
+
+.darwin-success-message {
+	margin: 10px;
+	color: #006600;
+	background: #fff;
+}
+
+.darwin-notice {
+	text-align: center;
+}
+
+ul.darwin-breadcrumb {
+	height: 24px;
+	background: url(/images/breadcrumb/mbt_bg.gif) repeat-x;
+	list-style: none;
+	padding: 0 0 0 12px;
+	margin: 0;
+}
+
+ul.darwin-breadcrumb li {
+	float: left;
+	width: auto;
+	height: 24px;
+	text-align: center;
+	margin: 0;
+	margin-left: -12px;
+	display: inline;
+}
+
+ul.darwin-breadcrumb li a {
+	color: #06c;
+	text-decoration: none;
+}
+
+ul.darwin-breadcrumb li a:hover {
+	color: #06c;
+	text-decoration: underline;
+}
+
+.darwin-breadcrumb-list .darwin-breadcrumb-left, .darwin-breadcrumb-list .darwin-breadcrumb-right, .darwin-breadcrumb-list-hover .darwin-breadcrumb-left, .darwin-breadcrumb-list-hover .darwin-breadcrumb-right, .darwin-breadcrumb-list-choiced .darwin-breadcrumb-left, .darwin-breadcrumb-list-choiced .darwin-breadcrumb-right {
+	display: block;
+	float: left;
+	width: 12px;
+	height: 24px;
+}
+
+.darwin-breadcrumb-list .darwin-breadcrumb-text, .darwin-breadcrumb-list-hover .darwin-breadcrumb-text, .darwin-breadcrumb-list-choiced .darwin-breadcrumb-text {
+	display: block;
+	float: left;
+	width: auto;
+	height: 24px;
+	padding: 0 10px;
+	line-height: 24px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.darwin-breadcrumb-list .darwin-breadcrumb-left {
+	background: url(/images/breadcrumb/default_L.gif) no-repeat;
+}
+
+.darwin-breadcrumb-list .darwin-breadcrumb-text {
+	background: url(/images/breadcrumb/mbt_bg.gif) repeat-x;
+}
+
+.darwin-breadcrumb-list .darwin-breadcrumb-right {
+	background: url(/images/breadcrumb/default_L.gif) no-repeat;
+}
+
+.darwin-breadcrumb-list-hover .darwin-breadcrumb-left {
+	background: url(/images/breadcrumb/hover_L.gif) no-repeat;
+}
+
+.darwin-breadcrumb-list-hover .darwin-breadcrumb-text {
+	background: url(/images/breadcrumb/hover_bg.gif) repeat-x;
+}
+
+.darwin-breadcrumb-list-hover .darwin-breadcrumb-right {
+	background: url(/images/breadcrumb/hover_R.gif) no-repeat;
+	z-index: 2;
+	position: relative;
+}
+
+.darwin-breadcrumb-list-choiced .darwin-breadcrumb-left {
+	background: url(/images/breadcrumb/choiced_L.gif) no-repeat;
+}
+
+.darwin-breadcrumb-list-choiced .darwin-breadcrumb-text {
+	background: url(/images/breadcrumb/choiced_bg.gif) repeat-x;
+}
+
+.darwin-breadcrumb-list-choiced .darwin-breadcrumb-text {
+    color: #fff;
+    font-weight: bold;
+}
+
+.darwin-breadcrumb-list-choiced .darwin-breadcrumb-right {
+	background: url(/images/breadcrumb/choiced_R.gif) no-repeat;
+	z-index: 2;
+	position: relative;
+}
+
