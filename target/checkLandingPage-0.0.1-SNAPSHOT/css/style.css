@@ -1,0 +1,291 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+body {
+	text-align: center;
+}
+div#outer {
+	width: 75em; text-align: left; margin-right: auto; margin-bottom: -63px; margin-left: auto; min-height: 100%;
+}
+div#clearfooter {
+	height: 63px; clear: both;
+}
+div#header {
+	top: 0px; width: 100%; position: absolute;
+}
+div#header div.centered {
+	width: 75em; height: 314px;
+}
+div#footer {
+	width: 100%; height: 53px; padding-top: 10px;
+}
+div#footer div.centered {
+	height: 43px;
+}
+div#sidebar {
+	width: 25em; margin-top: 384px; float: left; position: relative; z-index: 2;
+}
+div#content {
+	padding: 0px 1.5em; width: 47em; margin-top: 402px; float: right; position: relative; z-index: 2;
+}
+div.centered {
+	left: 0px; top: 0px; width: 75em; margin-right: auto; margin-left: auto; position: relative;
+}
+div#banner {
+	height: 124px; padding-top: 12px; z-index: 1;
+}
+.clear {
+	height: 1px; overflow: hidden; clear: both; margin-top: -1px;
+}
+html {
+	font-family: georgia, serif;
+}
+strong {
+	font-weight: bold;
+}
+th {
+	font-weight: bold;
+}
+thead td {
+	font-weight: bold;
+}
+dt {
+	font-weight: bold;
+}
+b {
+	font-weight: bold;
+}
+cite {
+	font-style: italic;
+}
+em {
+	font-style: italic;
+}
+dfn {
+	font-style: italic;
+}
+address {
+	font-style: italic;
+}
+i {
+	font-style: italic;
+}
+dd {
+	font-style: italic;
+}
+blockquote {
+	font-style: italic;
+}
+code {
+	font-family: arial;
+}
+kbd {
+	font-family: arial;
+}
+samp {
+	font-family: arial;
+}
+pre {
+	font-family: arial;
+}
+tt {
+	font-family: arial;
+}
+var {
+	font-family: arial;
+}
+input[type='text'] {
+	font-family: arial;
+}
+textarea {
+	font-family: arial;
+}
+del {
+	color: rgb(102, 102, 102); text-decoration: line-through;
+}
+ins {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+dfn {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+small {
+	font-size: 0.8em;
+}
+sup {
+	font-size: 0.8em;
+}
+sub {
+	font-size: 0.8em;
+}
+big {
+	font-size: 1.2em;
+}
+abbr {
+	text-transform: uppercase;
+}
+acronym {
+	text-transform: uppercase;
+}
+a abbr {
+	border: currentColor;
+}
+a acronym {
+	border: currentColor;
+}
+abbr[title] {
+	cursor: help;
+}
+acronym[title] {
+	cursor: help;
+}
+dfn[title] {
+	cursor: help;
+}
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+strike {
+	text-decoration: line-through;
+}
+p {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+blockquote {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+ul {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+ol {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+dl {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+table {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+address {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+form {
+	line-height: 1.5em; margin-bottom: 0.7em;
+}
+h1 {
+	line-height: 1em; font-weight: normal;
+}
+h2 {
+	line-height: 1em; font-weight: normal;
+}
+h3 {
+	line-height: 1em; font-weight: normal;
+}
+h4 {
+	line-height: 1em; font-weight: normal;
+}
+h5 {
+	line-height: 1em; font-weight: normal;
+}
+h6 {
+	line-height: 1em; font-weight: normal;
+}
+#content h1 {
+	font-size: 1.8em; margin-bottom: 0.67em;
+}
+#content h2 {
+	font-size: 1.2em; font-weight: bold; margin-bottom: 0.6em;
+}
+#sidebar h1 {
+	font-size: 1.5em; font-style: italic; font-weight: bold; margin-bottom: 0.6em;
+}
+a {
+	text-decoration: underline;
+}
+label {
+	font-size: 0.9em; display: block;
+}
+input {
+	padding: 2px; width: 100%; margin-bottom: 0.7em; vertical-align: middle; display: block;
+}
+textarea {
+	padding: 2px; width: 100%; margin-bottom: 0.7em; vertical-align: middle; display: block;
+}
+input.hidden {
+	display: none;
+}
+input.submit {
+	padding: 0px; border: currentColor; width: 88px; height: 21px; float: right; cursor: pointer;
+}
+select {
+	padding: 0.1em 0.1em 0px 0.2em;
+}
+option {
+	padding-right: 0.7em;
+}
+div#girl {
+	width: 300px; height: 364px; float: left;
+}
+div#switcher {
+	padding: 4px 6px 0px; width: 76px; height: 26px; float: right;
+}
+div#switcher a span {
+	display: none;
+}
+a#night {
+	margin: 0px 8px; width: 20px; height: 20px; float: left; display: block;
+}
+a#day {
+	margin: 0px 8px; width: 20px; height: 20px; float: left; display: block;
+}
+span#night {
+	margin: 0px 8px; width: 20px; height: 20px; float: left; display: block;
+}
+span#day {
+	margin: 0px 8px; width: 20px; height: 20px; float: left; display: block;
+}
+div#intro {
+	margin: 84px 18px 0px 0px; width: 38.5em; text-align: left; font-size: 14px; float: right;
+}
+div#intro h1 {
+	font-size: 1.4em; margin-bottom: 0.47em;
+}
+div.project {
+	background: rgb(251, 251, 243); padding: 6px 18px 6px 6px; border: 1px solid rgb(204, 214, 185); margin-bottom: 1em;
+}
+div.project a img {
+	border: 1px solid rgb(251, 251, 243); margin-right: 6px; float: left;
+}
+div.project a:hover img {
+	border: 1px solid rgb(204, 214, 185); margin-right: 6px; float: left;
+}
+a.visitlink {
+	font-size: 11px; font-style: italic; text-decoration: underline; float: right;
+}
+#sidebar_bot {
+	width: 300px; height: 4px; overflow: hidden; clear: right;
+}
+#sidebar form {
+	margin: 0px 2em; padding-top: 35px;
+}
+#sidebar #result {
+	margin: 0px 2em 2em;
+}
+.warn#result {
+	color: rgb(255, 255, 255); font-size: 0.9em; font-weight: bold;
+}
+#footer {
+	color: rgb(153, 153, 153);
+}
+#footer div.left {
+	margin: 8px 0px 0px 80px; width: 25em; text-align: left; line-height: 1.4em; font-size: 0.9em; float: left;
+}
+#footer div.right {
+	margin: 8px 1.5em 0px 0px; width: 45em; text-align: right; line-height: 1.4em; font-size: 0.9em; float: right;
+}

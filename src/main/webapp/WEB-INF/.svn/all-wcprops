@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/sem/!svn/ver/2619/branches/checkLandingPage/src/main/webapp/WEB-INF
+END
+app-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/sem/!svn/ver/2619/branches/checkLandingPage/src/main/webapp/WEB-INF/app-servlet.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/sem/!svn/ver/2619/branches/checkLandingPage/src/main/webapp/WEB-INF/log4j.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/sem/!svn/ver/2619/branches/checkLandingPage/src/main/webapp/WEB-INF/jdbc.properties
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/sem/!svn/ver/2619/branches/checkLandingPage/src/main/webapp/WEB-INF/web.xml
+END
